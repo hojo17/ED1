@@ -1,20 +1,34 @@
 function setup() {
-  createCanvas(720, 720);
+  createCanvas(windowWidth, windowHeight);
   background('blue');
-  strokeWeight(8);
+  strokeWeight(1);
   
-  fill('yellow');
+  fill('magenta');
 }
 
 function draw() {
 
-  translate (60,60);
-  quad (
-  0,0,
-  300,0,
-  300,300,
-  0,300
+  var num = 50
+  var sidelen = windowWidth/num
   
-  );
-
+  for(var y = 0; y < windowHeight; y = y + sidelen)
+    {
+    
+  for(var x = 0; x < windowWidth; x = x + sidelen)
+  {
+    quad (
+    x,y,
+    x + sidelen,y,
+    x + sidelen,sidelen + y,
+    x,sidelen + y 
+    )
+  }
+    }
+ 
 }
+
+
+function windowResize(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
