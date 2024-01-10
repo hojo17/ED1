@@ -1,12 +1,18 @@
+//adding a gif to my grid
+
+let gif:
+	
+function preload (assets/HenryJohnsonGIF.gif)
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background('blue');
   strokeWeight(1);
-  
   fill('magenta');
 }
 
 function draw() {
+
+background ('red')
 
   var num = 50
   var sidelen = windowWidth/num
@@ -16,12 +22,7 @@ function draw() {
     
   for(var x = 0; x < windowWidth; x = x + sidelen)
   {
-    quad (
-    x,y,
-    x + sidelen,y,
-    x + sidelen,sidelen + y,
-    x,sidelen + y 
-    )
+image (gif, x, y, sideLen, sideLen)
   }
     }
  
