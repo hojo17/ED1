@@ -16,9 +16,7 @@ function draw() {
 
 background ('255,255,255    ');
 
- background('green');
-
-  var num = 50
+  var num = 8
   var sidelen = windowWidth;
   
   for(var y = 0; y < 2 * windowHeight; y = y + sidelen)
@@ -26,7 +24,7 @@ background ('255,255,255    ');
     
   for(var x = 0; x < 2 * windowWidth; x = x + sidelen)
   {
-  image (gif, x, y, sidelen, sideLen)
+  image (gif, x, y, sideLen, sideLen)
   
     }
  }
