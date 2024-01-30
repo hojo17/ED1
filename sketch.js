@@ -6,7 +6,6 @@
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  cursor('assets/explore.png');
   fill('magenta');
   strokeweight(1);
   
