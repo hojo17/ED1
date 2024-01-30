@@ -1,7 +1,7 @@
 	let gif;
 	
 	function preload(){
-	gif = loadImage ('assets/circle.gif');
+	gif = loadImage ('Assets/circle.gif');
 	}
 
 function setup() {
