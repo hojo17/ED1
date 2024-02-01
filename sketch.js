@@ -24,7 +24,7 @@ function draw() {
     
   for(var x = 0; x < 2 * windowWidth; x = x + sidelen)
   {
-  image (gif, x, y, sidelen, sideLen);
+  image (gif, x, y, sidelen, sidelen);
   
     }
  }
