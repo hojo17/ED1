@@ -7,7 +7,7 @@ let gif;
 function setup() {
   createCanvas(windowWidth, windowHeight*2);
   fill('magenta');
-  strokeweight(1);
+  strokeWeight(1);
   
   
 }
