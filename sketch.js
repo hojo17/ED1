@@ -1,11 +1,11 @@
-	let gif;
+let gif;
 	
 	function preload(){
 	gif = loadImage ('Assets/circle.gif');
 	}
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight*2);
   fill('magenta');
   strokeweight(1);
   
@@ -32,6 +32,6 @@ function draw() {
 
 
 function windowResized(){
-  resizeCanvas (windowWidth, windowHeight);
+  resizeCanvas (windowWidth, windowHeight*2);
 }
 
